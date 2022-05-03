@@ -52,3 +52,15 @@
 .appCEP{
   margin: 0 auto;
 }
+
+.tituloCEP{
+  font-size: 3rem;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+@media(max-width:600px){
+  .tituloCEP{
+    font-size: 2rem;
+  }
+}

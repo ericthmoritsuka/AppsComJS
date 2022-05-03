@@ -21,6 +21,9 @@
 
 .tituloChuck{
   color: white;
+  font-size: 3rem;
+  text-align: center;
+  text-transform: uppercase;
 }
 
 .bgChuck{
@@ -42,5 +45,9 @@
 
   .btPiada{
     font-size: 1.5rem;
+  }
+
+  .tituloChuck{
+    font-size: 2rem;
   }
 }
