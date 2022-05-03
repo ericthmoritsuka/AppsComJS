@@ -1,0 +1,52 @@
+.bgBTCreator {
+  margin: 0px;
+  background-color: white;
+  display: grid;
+  justify-content: center;
+}
+
+.labelBTCreator {
+  font-size: 1rem;
+  display: block;
+  margin-bottom: 0.5rem;
+  margin-top: 1rem;
+}
+
+.inputBTCreator {
+  display: block;
+  max-width: 18ch;
+  font-size: 1rem;
+}
+
+.bt-creator {
+  display: grid;
+  gap: 30px;
+  padding: 30px;
+  grid-template-columns: 200px 1fr;
+}
+
+#controles {
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 0.875rem;
+  background-color: #eee;
+  padding: 1rem;
+  border-radius: 4px;
+  box-shadow: 2px 2px 2px 0 rgba(0, 0, 0, 0.1);
+}
+
+.css {
+  font-family: "IBM Plex Mono", monospace;
+  color: #333;
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+}
+
+.css span {
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.resultado {
+  padding-left: 80px;
+}

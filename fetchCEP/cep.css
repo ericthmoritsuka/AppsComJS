@@ -1,0 +1,50 @@
+.bgCEP {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: center;
+  gap:0px;
+  margin: 30px 60px;
+  padding: 30px;
+}
+
+#buscaCEP {
+  display: grid;
+  gap: 30px;
+  max-width: 200px;
+  text-align: center;
+  grid-column: 1;
+}
+
+.resultadoCEP {
+  grid-column: 2;
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.25rem;
+  border: 2px solid black;
+  border-radius: 5px;
+  padding: 30px;
+}
+
+.formCEP{
+  display: grid;
+  justify-content: center;
+}
+
+#btCEP{
+  border: 3px solid black;
+}
+
+#btCEP:hover{
+  border: 3px solid #BABAF0;
+}
+
+.inputCEP{
+  max-width: 15ch;
+}
+
+.labelCEP{
+  max-width: 15ch;
+}

@@ -1,0 +1,40 @@
+.appDado{
+  display: grid;
+  justify-content: center;
+  gap: 30px;
+}
+
+.tituloDado{
+  font-size: 3rem;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.bgDado {
+  display: grid;
+  justify-content: center;
+  gap: 30px;
+}
+
+.bgDado h1 {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+}
+
+.dados{
+  display: grid;
+  justify-content: center;
+}
+
+.dado {
+  display: none;
+}
+
+.dado.ativo {
+  display: block;
+}
+
+.resultado {
+  font-size: 1rem;
+  color: blue;
+}

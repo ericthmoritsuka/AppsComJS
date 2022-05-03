@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Radio+Canada:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
+  <title>Testes com JavaScript</title>
+</head>
+
+<body>
+  <div class="bg">
+    <div class="introducao">
+      <h1 class="introducaoTitulo">Teste de elementos com JavaScript</h1>
+      <p>Nesta página, estou incluindo alguns elementos criados com JavaScript:</p>
+      <ul class="listaObjetos">
+        <li><a href="#appBTCreator">Um gerador de botões (?)</a></li>
+        <li><a href="#appCronometro">Um cronômetro</a></li>
+        <li><a href="#appDado">Um dado que retorna valores aleatórios</a></li>
+        <li><a href="#appBlockchain">Um elemento que se comunica com uma API e retorna o valor de compra e venda de bitcoins em reais</a></li>
+        <li><a href="#appCEP">Um elemento que se comunica comuma API e retorna informações sobre um dado CEP</a></li>
+        <li><a href="#appChuck">Um elemento que se comunica com uma API e retorna uma piada aleatória com o Chuck Norris</a></li>
+      </ul>
+    </div>
+
+    <section class="bgBTCreator" id="appBTCreator">
+        <section class="bt-creator">
+          <form id="controles">
+            <label for="texto" class="labelBTCreator">Texto</label>
+            <input type="text" name="texto" id="texto" class="inputBTCreator">
+            <label for="color" class="labelBTCreator">Cor do Texto</label>
+            <input type="color" name="color" id="color" class="inputBTCreator">
+            <label for="backgroundColor" class="labelBTCreator">Cor do fundo</label>
+            <input type="color" name="backgroundColor" id="color" class="inputBTCreator">
+            <label for="height" class="labelBTCreator">Altura</label>
+            <input type="range" name="height" id="height" min="0" max="200" class="inputBTCreator">
+            <label for="width" class="labelBTCreator">Largura</label>
+            <input type="range" name="width" id="width" min="0" max="600" class="inputBTCreator">
+            <label for="border" class="labelBTCreator">Borda</label>
+            <input type="text" name="border" id="border" class="inputBTCreator">
+            <label for="borderRadius" class="labelBTCreator">Arredondar Borda</label>
+            <input type="range" name="borderRadius" id="borderRadius" min="0" max="20" class="inputBTCreator">
+            <label for="fontFamily" class="labelBTCreator">Fonte</label>
+            <select name="fontFamily" id="fontFamily">
+              <option value="Arial">Arial</option>
+              <option value="Georgia">Georgia</option>
+              <option value="monospace">Monospace</option>
+            </select>
+            <label for="fontSize" class="labelBTCreator">Tamanho da Fonte</label>
+            <input type="number" name="fontSize" id="fontSize" class="inputBTCreator">
+          </form>
+          <section class="resultado">
+            <button class="btn">Clique</button>
+            <pre><code class="css"></code></pre>
+          </section>
+        </section>
+    </section>
+
+    <section class="appCronometro" id="appCronometro">
+      <h1 class="tituloCronometro">Cronometro</h1>
+      <div class="bgCronometro">
+        <div class="bgTempo">
+          <span class="tempo">TEMPO</span>
+        </div>
+        <div class="bgBotoesCronometro">
+          <button class="iniciar">INICIAR</button>
+          <button class="pausar">PAUSAR</button>
+          <button class="resetar">RESETAR</button>
+        </div>
+      </div>
+    </section>
+    
+    <section class="appDado" id="appDado">
+      <h1 class="tituloDado">Dado</h1>
+      <div class="bgDado">
+        <h1>Clique no dado</h1>
+        <div class="dados">
+          <span class="dado um ativo">
+            <img src="./dado/img/1.svg" alt="">
+          </span>
+          <span class="dado dois">
+            <img src="./dado/img/2.svg" alt="">
+          </span>
+          <span class="dado tres">
+            <img src="./dado/img/3.svg" alt="">
+          </span>
+          <span class="dado quatro">
+            <img src="./dado/img/4.svg" alt="">
+          </span>
+          <span class="dado cinco">
+            <img src="./dado/img/5.svg" alt="">
+          </span>
+          <span class="dado seis">
+            <img src="./dado/img/6.svg" alt="">
+          </span>
+        </div>
+        <h2 class="resultado"></h2>
+      </div>
+    </section>
+
+    <section class="appBlockchain" id="appBlockchain">
+      <div class="bgBlockchain">
+        <h2 class="tituloBlockchain">Preço BITCOIN</h2>
+        <p class="blockchain"></p>
+      </div>
+      <button type="button" class="btRefreshBTC">REFRESH</button>
+    </section>
+
+    <section class="appCEP" id="appCEP">
+      <div class="bgCEP">
+        <div class="formCEP">
+          <form id="buscaCEP">
+            <label for="cep" class="labelCEP">Insira o Cep:</label>
+            <input type="text" id="cep" class="inputCEP">
+            <input type="button" value="Pesquisar CEP" id="btCEP"></input>
+          </form>
+        </div>
+        <div class="resultadoCEP">
+        </div>
+      </div>
+    </section>
+
+    <section class="appChuck" id="appChuck">
+      <div class="bgChuck">
+        <h2 class="tituloChuck">Chuck Norris' Joke:</h2>
+        <p class="piada"></p>
+        <div class="bgBT">
+          <button type="button" class="btPiada">NEXT JOKE</button>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <script src="./btCreator/btCreator.js"></script>
+  <script src="./cronometro/cronometro.js"></script>
+  <script src="./dado/dado.js"></script>
+  <script src="./fetchBlockchain/blockchain.js"></script>
+  <script src="./fetchCEP/cep.js"></script>
+  <script src="./fetchChuckNorris/chuck.js"></script>
+  <script src="./scrollSuave.js"></script>
+
+</body>
+
+</html>
