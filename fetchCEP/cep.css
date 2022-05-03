@@ -2,7 +2,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   justify-content: center;
-  gap:0px;
+  gap: 50px;
   margin: 30px 60px;
   padding: 30px;
 }
@@ -47,4 +47,8 @@
 
 .labelCEP{
   max-width: 15ch;
+}
+
+.appCEP{
+  margin: 0 auto;
 }

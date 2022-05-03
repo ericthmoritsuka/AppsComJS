@@ -1,8 +1,12 @@
-.bgBTCreator {
-  margin: 0px;
+.appBTCreator {
   background-color: white;
+}
+
+.bgBTCreator{
+  margin: 0 auto;
   display: grid;
   justify-content: center;
+  max-width: 800px;
 }
 
 .labelBTCreator {
@@ -49,4 +53,8 @@
 
 .resultado {
   padding-left: 80px;
+}
+
+@media(max-width: 600px){
+
 }

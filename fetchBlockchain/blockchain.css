@@ -1,8 +1,12 @@
+.appBlockchain{
+  background-color: #202020;
+}
+
 .bgBlockchain {
   display: grid;
   justify-content: center;
   gap: 30px;
-  margin: 30px;
+  margin: 30px auto;
 }
 
 .blockchain{
@@ -20,12 +24,6 @@
   text-align: center;
 }
 
-.appBlockchain{
-  display: grid;
-  justify-items: center;
-  background-color: #202020;
-  padding: 30px;
-}
 
 .btRefreshBTC{
   font-size: 1.75rem;
@@ -33,8 +31,20 @@
   border-radius: 5px;
   text-align: center;
   border: 3px solid black;
+  max-width: fit-content;
+  justify-self: center;
 }
 
 .btRefreshBTC:hover{
   border: 3px solid #BABAF0;
+}
+
+@media(max-width:600px){
+  .blockchain{
+    font-size: 1rem;
+  }
+  
+  .tituloBlockchain{
+    font-size: 1.5rem;
+  }
 }

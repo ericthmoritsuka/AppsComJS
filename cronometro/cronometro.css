@@ -1,5 +1,9 @@
-.appCronometro {
+#appCronometro {
   background-color: #202020;
+}
+
+.bgAppCronometro {
+  margin: 0 auto;
 }
 
 .bgCronometro{
@@ -47,4 +51,21 @@ margin: 0 auto;
   margin-top: 30px;
   color: white;
   text-transform: uppercase;
+}
+
+@media(max-width:600px){
+  .tituloCronometro{
+    font-size: 2rem;
+  }
+  .tempo {
+    font-size: 2rem;
+  }
+  .iniciar, .pausar, .resetar{
+    font-size: 1rem;
+    width: 15ch;
+  }
+  .bgCronometro{
+    margin: 10px;
+    padding: 10px;
+  }
 }

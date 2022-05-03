@@ -14,20 +14,23 @@
 
 <body>
   <div class="bg">
-    <div class="introducao">
-      <h1 class="introducaoTitulo">Elementos com JavaScript</h1>
-      <p>Nesta página, estou incluindo alguns elementos criados com JavaScript:</p>
-      <ul class="listaObjetos">
-        <li><a href="#appBTCreator">Um gerador de botões (?)</a></li>
-        <li><a href="#appCronometro">Um cronômetro</a></li>
-        <li><a href="#appDado">Um dado que retorna valores aleatórios</a></li>
-        <li><a href="#appBlockchain">Um elemento que se comunica com uma API e retorna o valor de compra e venda de bitcoins em reais</a></li>
-        <li><a href="#appCEP">Um elemento que se comunica comuma API e retorna informações sobre um dado CEP</a></li>
-        <li><a href="#appChuck">Um elemento que se comunica com uma API e retorna uma piada aleatória com o Chuck Norris</a></li>
-      </ul>
+    <div class="introducaoBG">
+      <div class="introducao">
+        <h1 class="introducaoTitulo">Elementos com JavaScript</h1>
+        <p>Nesta página, estou incluindo alguns elementos criados com JavaScript:</p>
+        <ul class="listaObjetos">
+          <li><a href="#appBTCreator">Um gerador de botões (?)</a></li>
+          <li><a href="#appCronometro">Um cronômetro</a></li>
+          <li><a href="#appDado">Um dado que retorna valores aleatórios</a></li>
+          <li><a href="#appBlockchain">Um elemento que se comunica com uma API e retorna o valor de compra e venda de bitcoins em reais</a></li>
+          <li><a href="#appCEP">Um elemento que se comunica comuma API e retorna informações sobre um dado CEP</a></li>
+          <li><a href="#appChuck">Um elemento que se comunica com uma API e retorna uma piada aleatória com o Chuck Norris</a></li>
+        </ul>
+      </div>
     </div>
 
-    <section class="bgBTCreator" id="appBTCreator">
+    <section class="appBTCreator" id="appBTCreator">
+      <div class="bgBTCreator">
         <section class="bt-creator">
           <form id="controles">
             <label for="texto" class="labelBTCreator">Texto</label>
@@ -58,18 +61,21 @@
             <pre><code class="css"></code></pre>
           </section>
         </section>
+      </div>
     </section>
 
     <section class="appCronometro" id="appCronometro">
-      <h1 class="tituloCronometro">Cronometro</h1>
-      <div class="bgCronometro">
-        <div class="bgTempo">
-          <span class="tempo">TEMPO</span>
-        </div>
-        <div class="bgBotoesCronometro">
-          <button class="iniciar">INICIAR</button>
-          <button class="pausar">PAUSAR</button>
-          <button class="resetar">RESETAR</button>
+      <div class="bgAppCronometro">
+        <h1 class="tituloCronometro">Cronometro</h1>
+        <div class="bgCronometro">
+          <div class="bgTempo">
+            <span class="tempo">TEMPO</span>
+          </div>
+          <div class="bgBotoesCronometro">
+            <button class="iniciar">INICIAR</button>
+            <button class="pausar">PAUSAR</button>
+            <button class="resetar">RESETAR</button>
+          </div>
         </div>
       </div>
     </section>
@@ -106,8 +112,8 @@
       <div class="bgBlockchain">
         <h2 class="tituloBlockchain">Preço BITCOIN</h2>
         <p class="blockchain"></p>
+        <button type="button" class="btRefreshBTC">REFRESH</button>
       </div>
-      <button type="button" class="btRefreshBTC">REFRESH</button>
     </section>
 
     <section class="appCEP" id="appCEP">

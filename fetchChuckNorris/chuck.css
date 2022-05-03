@@ -1,3 +1,7 @@
+.appChuck{
+  background-color: #202020;
+}
+
 .btPiada{
   font-size: 2rem;
   padding: 10px 20px;
@@ -23,7 +27,7 @@
   display: grid;
   gap: 30px;
   justify-content: center;
-  margin: 50px;
+  margin: 50px auto;
 }
 
 .bgBT{
@@ -31,6 +35,12 @@
   justify-content: center;
 }
 
-.appChuck{
-  background-color: #202020;
+@media(max-width:600px){
+  .piada{
+    font-size: 1.25rem;
+  }
+
+  .btPiada{
+    font-size: 1.5rem;
+  }
 }
