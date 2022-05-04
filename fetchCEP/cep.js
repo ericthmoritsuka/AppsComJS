@@ -18,6 +18,10 @@ const buscaCEP = (cep) => {
       const resultado = document.querySelector(".resultadoCEP");
       let texto = `O cep ${body.cep} é referente a(o) ${body.logradouro} no bairro ${body.bairro}. Esse endereço está localizado na cidade de ${body.localidade}, em ${body.uf} e o ddd é ${body.ddd}.`;
       resultado.innerText = texto;
+    })
+    .catch(erro => {
+      const resultado = document.querySelector(".resultadoCEP");
+      resultado.innerText = 'Algo inesperado ocorreu. Tente novamente.'
     });
 };
 

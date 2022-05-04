@@ -21,10 +21,11 @@
         <ul class="listaObjetos">
           <li><a href="#appBTCreator">Um gerador de botões (?)</a></li>
           <li><a href="#appCronometro">Um cronômetro</a></li>
-          <li><a href="#appDado">Um dado que retorna valores aleatórios</a></li>
+          <li><a href="#appCountdown">Um elemento que conta o tempo até determinado evento</a></li>
           <li><a href="#appBlockchain">Um elemento que se comunica com uma API e retorna o valor de compra e venda de bitcoins em reais</a></li>
           <li><a href="#appCEP">Um elemento que se comunica comuma API e retorna informações sobre um dado CEP</a></li>
           <li><a href="#appChuck">Um elemento que se comunica com uma API e retorna uma piada aleatória com o Chuck Norris</a></li>
+          <li><a href="#appDado">Um dado que retorna valores aleatórios</a></li>
         </ul>
       </div>
     </div>
@@ -43,7 +44,7 @@
             <label for="height" class="labelBTCreator">Altura</label>
             <input type="range" name="height" id="height" min="0" max="200" class="inputBTCreator">
             <label for="width" class="labelBTCreator">Largura</label>
-            <input type="range" name="width" id="width" min="0" max="600" class="inputBTCreator">
+            <input type="range" name="width" id="width" min="0" max="200" class="inputBTCreator">
             <label for="border" class="labelBTCreator">Borda</label>
             <input type="text" name="border" id="border" class="inputBTCreator">
             <label for="borderRadius" class="labelBTCreator">Arredondar Borda</label>
@@ -67,7 +68,7 @@
 
     <section class="appCronometro" id="appCronometro">
       <div class="bgAppCronometro">
-        <h1 class="tituloCronometro">Cronometro</h1>
+        <h1 class="tituloClaro">Cronometro</h1>
         <div class="bgCronometro">
           <div class="bgTempo">
             <span class="tempo">TEMPO</span>
@@ -81,8 +82,63 @@
       </div>
     </section>
     
+    <section class="appCountdown" id="appCountdown">
+      <h1 class="tituloEscuro">Countdown</h1>
+      <div class="bgCountdown">
+        <div class="calendario">
+          <label for="nomeEvento">Qual o nome do evento?</label>
+          <input type="text" id="nomeEvento">
+          <label for="data">Escolha a data para o contador:</label>
+          <input type="date" id="data">
+          <button type="button" class="bt">COMEÇAR</button>
+        </div>
+        <div class="mostrador">
+          <div class="caixa">
+            <span class="countdown dias"></span>
+            <span class="countdown horas"></span>
+            <span class="countdown minutos"></span>
+            <span class="countdown segundos"></span>
+          </div>
+          <h1 class="evento">EVENTO</h1>
+        </div>
+      </div>
+    </section>
+    
+    <section class="appBlockchain" id="appBlockchain">
+      <div class="bgBlockchain">
+        <h2 class="tituloClaro">Preço BITCOIN</h2>
+        <p class="blockchain"></p>
+        <button type="button" class="btRefreshBTC">REFRESH</button>
+      </div>
+    </section>
+    
+    <section class="appCEP" id="appCEP">
+      <h1 class="tituloEscuro">BUSCA CEP</h1>
+      <div class="bgCEP">
+        <div class="formCEP">
+          <form id="buscaCEP">
+            <label for="cep" class="labelCEP">Insira o Cep:</label>
+            <input type="text" id="cep" class="inputCEP">
+            <input type="button" value="Pesquisar CEP" id="btCEP"></input>
+          </form>
+        </div>
+        <div class="resultadoCEP">
+        </div>
+      </div>
+    </section>
+    
+    <section class="appChuck" id="appChuck">
+      <div class="bgChuck">
+        <h1 class="tituloClaro">Chuck Norris' Joke:</h1>
+        <p class="piada"></p>
+        <div class="bgBT">
+          <button type="button" class="btPiada">NEXT JOKE</button>
+        </div>
+      </div>
+    </section>
+
     <section class="appDado" id="appDado">
-      <h1 class="tituloDado">Dado</h1>
+      <h1 class="tituloEscuro">Dado</h1>
       <div class="bgDado">
         <h1>Clique no dado</h1>
         <div class="dados">
@@ -108,39 +164,6 @@
         <h2 class="resultado"></h2>
       </div>
     </section>
-
-    <section class="appBlockchain" id="appBlockchain">
-      <div class="bgBlockchain">
-        <h2 class="tituloBlockchain">Preço BITCOIN</h2>
-        <p class="blockchain"></p>
-        <button type="button" class="btRefreshBTC">REFRESH</button>
-      </div>
-    </section>
-
-    <section class="appCEP" id="appCEP">
-      <h1 class="tituloCEP">BUSCA CEP</h1>
-      <div class="bgCEP">
-        <div class="formCEP">
-          <form id="buscaCEP">
-            <label for="cep" class="labelCEP">Insira o Cep:</label>
-            <input type="text" id="cep" class="inputCEP">
-            <input type="button" value="Pesquisar CEP" id="btCEP"></input>
-          </form>
-        </div>
-        <div class="resultadoCEP">
-        </div>
-      </div>
-    </section>
-
-    <section class="appChuck" id="appChuck">
-      <div class="bgChuck">
-        <h1 class="tituloChuck">Chuck Norris' Joke:</h1>
-        <p class="piada"></p>
-        <div class="bgBT">
-          <button type="button" class="btPiada">NEXT JOKE</button>
-        </div>
-      </div>
-    </section>
   </div>
 
   <script src="./btCreator/btCreator.js"></script>
@@ -150,6 +173,7 @@
   <script src="./fetchCEP/cep.js"></script>
   <script src="./fetchChuckNorris/chuck.js"></script>
   <script src="./scrollSuave.js"></script>
+  <script type="module" src="./countdown/countdown.js"></script>
 
 </body>
 

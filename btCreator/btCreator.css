@@ -9,12 +9,6 @@
   max-width: 800px;
 }
 
-.tituloBTCreator{
-  font-size: 3rem;
-  text-transform: uppercase;
-  text-align: center;
-}
-
 .labelBTCreator {
   font-size: 1rem;
   display: block;
@@ -59,10 +53,5 @@
 
 .resultado {
   padding-left: 80px;
-}
-
-@media(max-width: 600px){
-  .tituloBTCreator{
-    font-size: 2rem;
-  }
+  max-width: 300px;
 }

@@ -19,13 +19,6 @@
   color: white;
 }
 
-.tituloChuck{
-  color: white;
-  font-size: 3rem;
-  text-align: center;
-  text-transform: uppercase;
-}
-
 .bgChuck{
   display: grid;
   gap: 30px;
@@ -47,7 +40,4 @@
     font-size: 1.5rem;
   }
 
-  .tituloChuck{
-    font-size: 2rem;
-  }
 }

@@ -5,12 +5,6 @@
   margin: 0 auto;
 }
 
-.tituloDado{
-  font-size: 3rem;
-  text-align: center;
-  text-transform: uppercase;
-}
-
 .bgDado {
   display: grid;
   justify-content: center;

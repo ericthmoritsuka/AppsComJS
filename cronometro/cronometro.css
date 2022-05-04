@@ -45,18 +45,7 @@ margin: 0 auto;
   padding: 30px;
 }
 
-.tituloCronometro{
-  text-align: center;
-  font-size: 3rem;
-  margin-top: 30px;
-  color: white;
-  text-transform: uppercase;
-}
-
 @media(max-width:600px){
-  .tituloCronometro{
-    font-size: 2rem;
-  }
   .tempo {
     font-size: 2rem;
   }

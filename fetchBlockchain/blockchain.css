@@ -18,14 +18,6 @@
   color: white;
 }
 
-.tituloBlockchain{
-  font-size: 3rem;
-  color: white;
-  text-align: center;
-  text-transform: uppercase;
-}
-
-
 .btRefreshBTC{
   font-size: 1.75rem;
   padding: 10px 20px;
@@ -43,9 +35,5 @@
 @media(max-width:600px){
   .blockchain{
     font-size: 1rem;
-  }
-  
-  .tituloBlockchain{
-    font-size: 1.5rem;
   }
 }
