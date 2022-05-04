@@ -29,10 +29,10 @@ function contador(data) {
   const segundos = document.querySelector(".segundos");
   const evento = document.querySelector(".evento");
   countdown = setInterval(() => {
-    dias.innerText = data.total.dias + " dias";
-    horas.innerText = data.total.horas + " horas";
-    minutos.innerText = data.total.minutos + " minutos";
-    segundos.innerText = data.total.segundos + " segundos";
+    dias.innerHTML = data.total.dias + "<br>dias";
+    horas.innerHTML = data.total.horas + "<br>horas";
+    minutos.innerHTML = data.total.minutos + "<br>minutos";
+    segundos.innerHTML = data.total.segundos + "<br>segundos";
   }, 1000);
   evento.innerText = `Para ${data.evento}`;
 }
