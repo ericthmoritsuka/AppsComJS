@@ -19,6 +19,7 @@
 }
 
 .countdown {
+  display: none;
   border: 3px solid #9191BD;
   padding: 10px 30px;
   border-radius: 5px;
@@ -27,6 +28,10 @@
   font-size: 1.5rem;
   color: #353570;
   background-color: #BABAF0;
+}
+
+.countdown.ativo{
+  display: block;
 }
 
 .evento{

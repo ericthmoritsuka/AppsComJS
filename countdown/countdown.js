@@ -4,17 +4,19 @@ const bt = document.querySelector(".bt");
 bt.addEventListener("click", clickHandler);
 let checagem = false;
 let countdown;
+const listaCountdown = document.querySelectorAll(".countdown");
 
 function clickHandler() {
   if (!checagem) {
-    console.log('primeira vez')
+    listaCountdown.forEach((elemento) => {
+      elemento.classList.add("ativo");
+    });
     const nomeEvento = document.querySelector("#nomeEvento").value;
     const calendario = new Date(document.querySelector("#data").value);
     contador(new Countdown(nomeEvento, calendario));
     checagem = true;
   } else {
     clearInterval(countdown);
-    console.log('clear interval')
     const nomeEvento = document.querySelector("#nomeEvento").value;
     const calendario = new Date(document.querySelector("#data").value);
     contador(new Countdown(nomeEvento, calendario));
